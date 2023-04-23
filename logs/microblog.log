@@ -6,3 +6,78 @@
 2023-04-20 12:46:56,098 INFO: Microblog startup [in C:\xampp\htdocs\@my\@python\microblog\app\__init__.py:47]
 2023-04-20 13:09:24,411 INFO: Microblog startup [in C:\xampp\htdocs\@my\@python\microblog\app\__init__.py:47]
 2023-04-20 13:13:43,443 INFO: Microblog startup [in C:\xampp\htdocs\@my\@python\microblog\app\__init__.py:47]
+2023-04-23 20:34:29,759 INFO: Microblog startup [in C:\xampp\htdocs\@my\@python\microblog\app\__init__.py:53]
+2023-04-23 20:35:54,393 INFO: Microblog startup [in C:\xampp\htdocs\@my\@python\microblog\app\__init__.py:53]
+2023-04-23 21:21:03,589 INFO: Microblog startup [in C:\xampp\htdocs\@my\@python\microblog\app\__init__.py:53]
+2023-04-23 21:21:06,555 ERROR: Exception on /login [GET] [in C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py:1744]
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py", line 1821, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py", line 2312, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "C:\xampp\htdocs\@my\@python\microblog\app\routes.py", line 17, in before_request
+    g.locale = str(get_locale())
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask_babel\__init__.py", line 230, in get_locale
+    locale = Locale.parse(rv)
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\babel\core.py", line 317, in parse
+    raise TypeError(f"Unexpected value for identifier: {identifier!r}")
+TypeError: Unexpected value for identifier: <built-in function id>
+2023-04-23 21:24:00,267 ERROR: Exception on /login [GET] [in C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py:1744]
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py", line 1821, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py", line 2312, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "C:\xampp\htdocs\@my\@python\microblog\app\routes.py", line 17, in before_request
+    g.locale = str(get_locale())
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask_babel\__init__.py", line 230, in get_locale
+    locale = Locale.parse(rv)
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\babel\core.py", line 317, in parse
+    raise TypeError(f"Unexpected value for identifier: {identifier!r}")
+TypeError: Unexpected value for identifier: <built-in function id>
+2023-04-23 21:24:25,222 ERROR: Exception on /login [GET] [in C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py:1744]
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py", line 1821, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py", line 2312, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "C:\xampp\htdocs\@my\@python\microblog\app\routes.py", line 17, in before_request
+    g.locale = str(get_locale())
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask_babel\__init__.py", line 230, in get_locale
+    locale = Locale.parse(rv)
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\babel\core.py", line 317, in parse
+    raise TypeError(f"Unexpected value for identifier: {identifier!r}")
+TypeError: Unexpected value for identifier: <built-in function id>
+2023-04-23 21:24:25,920 ERROR: Exception on /login [GET] [in C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py:1744]
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py", line 1821, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask\app.py", line 2312, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "C:\xampp\htdocs\@my\@python\microblog\app\routes.py", line 17, in before_request
+    g.locale = str(get_locale())
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\flask_babel\__init__.py", line 230, in get_locale
+    locale = Locale.parse(rv)
+  File "C:\xampp\htdocs\@my\@python\microblog\venv\lib\site-packages\babel\core.py", line 317, in parse
+    raise TypeError(f"Unexpected value for identifier: {identifier!r}")
+TypeError: Unexpected value for identifier: <built-in function id>
+2023-04-23 21:25:09,058 INFO: Microblog startup [in C:\xampp\htdocs\@my\@python\microblog\app\__init__.py:53]
+2023-04-23 21:28:11,584 INFO: Microblog startup [in C:\xampp\htdocs\@my\@python\microblog\app\__init__.py:53]
+2023-04-23 21:39:01,457 INFO: Microblog startup [in C:\xampp\htdocs\@my\@python\microblog\app\__init__.py:53]
+2023-04-23 21:40:44,507 INFO: Microblog startup [in C:\xampp\htdocs\@my\@python\microblog\app\__init__.py:53]
