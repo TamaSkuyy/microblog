@@ -91,3 +91,4 @@ jinja2.exceptions.TemplateSyntaxError: unexpected char '\\' at 4321
 2023-05-02 17:30:40,550 INFO: Microblog startup [in C:\xampp\htdocs\@my\@python\microblog\app\__init__.py:53]
 2023-05-02 17:34:12,519 INFO: Microblog startup [in C:\xampp\htdocs\@my\@python\microblog\app\__init__.py:53]
 2023-05-02 17:34:28,728 INFO: Microblog startup [in C:\xampp\htdocs\@my\@python\microblog\app\__init__.py:53]
+2023-05-02 18:35:11,845 INFO: Microblog startup [in C:\xampp\htdocs\@my\@python\microblog\app\__init__.py:73]
