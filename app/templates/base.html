@@ -77,6 +77,40 @@
             {# super() #}
             {{ moment.include_moment() }}
             {{ moment.lang(g.locale) }}
+            <script>
+                function translate(sourceElem, destElem, sourceLang, destLang) {
+                    // vanilla javascript
+                    document.getElementById(destElem).innerHTML = '<img src=\"{{ url_for("static", filename="loading.gif") }}\">';
+                    fetch('/translate', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            text: document.getElementById(sourceElem).textContent,
+                            source_language: sourceLang,
+                            dest_language: destLang
+                        })
+                    }).then(response => response.json())
+                    .then(data => {
+                        document.getElementById(destElem).textContent = data['text'];
+                    })
+                    .catch(error => {
+                        document.getElementById(destElem).textContent = "{{ _('Error: Could not contact server.') }}";
+                    });
+                    // Using Jquery
+                    // $(destElem).html('<img src="{{ url_for('static', filename='loading.gif') }}">');
+                    // $.post('/translate', {
+                    //     text: $(sourceElem).text(),
+                    //     source_language: sourceLang,
+                    //     dest_language: destLang
+                    // }).done(function(response) {
+                    //     $(destElem).text(response['text'])
+                    // }).fail(function() {
+                    //     $(destElem).text("{{ _('Error: Could not contact server.') }}");
+                    // });
+                }
+            </script>
             <!-- Optional JavaScript -->
             {{ bootstrap.load_js() }}
         {% endblock %}
