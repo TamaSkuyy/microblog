@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <h1>{{ _('Search Results') }}</h1>
+    {% for post in posts %}
+        {% include '_post.html' %}
+    {% endfor %}
+    <nav aria-label="...">
+        <ul class="pagination">
+            <li class="page-item{% if not prev_url %} disabled{% endif %}">
+                <a class="page-link" href="{{ prev_url or '#' }}" tabindex="-1" aria-disabled="{{ not prev_url }}">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="visually-hidden">{{ _('Previous results') }}</span>
+                </a>
+            </li>
+            <li class="page-item{% if not next_url %} disabled{% endif %}">
+                <a class="page-link" href="{{ next_url or '#' }}" aria-disabled="{{ not next_url }}">
+                    <span class="visually-hidden">{{ _('Next results') }}</span>
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+{% endblock %}
